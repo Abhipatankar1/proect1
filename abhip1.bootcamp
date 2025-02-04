@@ -1,0 +1,54 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2540b87b-c7c8-4664-a356-6fd6219a7594",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Random list: [34, 94, 65, 83, 56, 29, 39, 58, 96, 5]\n",
+      "Even numbers in the list: [34, 94, 56, 58, 96]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "\n",
+    "# Generate a random list of numbers (for example, 10 numbers between 1 and 100)\n",
+    "random_list = [random.randint(1, 100) for _ in range(10)]\n",
+    "\n",
+    "# Print the random list\n",
+    "print(\"Random list:\", random_list)\n",
+    "\n",
+    "# Filter and print even numbers from the list\n",
+    "even_numbers = [num for num in random_list if num % 2 == 0]\n",
+    "print(\"Even numbers in the list:\", even_numbers)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
